@@ -1,0 +1,23 @@
+import java.util.*;
+
+public class MainActivity {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the customer name: ");
+        String customerName = scanner.nextLine();
+        System.out.print("Enter the initial balance: ");
+        double initialBalance = scanner.nextDouble();
+
+        BankAccount account = new BankAccount(customerName, initialBalance);
+        BankService bankService = new BankService(account);
+
+        System.out.print("Enter the amount to deposit: ");
+        double depositAmount = scanner.nextDouble();
+        bankService.deposit(depositAmount);
+
+        bankService.displayBalance();
+
+        scanner.close();
+    }
+}

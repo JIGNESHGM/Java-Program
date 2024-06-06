@@ -1,0 +1,5 @@
+// Define an interface
+public interface Shape {
+    double area(); // Method to calculate area
+    double perimeter(); // Method to calculate perimeter
+}

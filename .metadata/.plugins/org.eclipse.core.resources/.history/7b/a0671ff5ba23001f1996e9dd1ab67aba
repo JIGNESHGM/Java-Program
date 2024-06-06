@@ -1,0 +1,36 @@
+import java.util.HashMap;
+import java.util.Map;
+
+public class Database {
+    private Map<String, Person> database;
+
+    public Database() {
+        this.database = new HashMap<>();
+    }
+
+    public void addEntry(Person person) {
+        database.put(person.getUniqueID(), person);
+    }
+
+    public Person getEntry(String uniqueID) {
+        return database.get(uniqueID);
+    }
+
+    public void updateEntry(Person person) {
+        database.put(person.getUniqueID(), person);
+    }
+
+    public void searchByKeyword(String keyword) {
+        for (Person person : database.values()) {
+            if (person.getName().contains(keyword) || person.getAddress().contains(keyword) || person.getTelephoneNumber().contains(keyword) || person.getMobileNumber().contains(keyword) || person.getHeadOfFamily().contains(keyword) || person.getUniqueID().contains(keyword)) {
+                System.out.println("Name: " + person.getName());
+                System.out.println("Address: " + person.getAddress());
+                System.out.println("Telephone Number: " + person.getTelephoneNumber());
+                System.out.println("Mobile Number: " + person.getMobileNumber());
+                System.out.println("Head of Family: " + person.getHeadOfFamily());
+                System.out.println("Unique ID: " + person.getUniqueID());
+                System.out.println();
+            }
+        }
+    }
+}

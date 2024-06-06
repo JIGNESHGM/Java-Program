@@ -1,0 +1,61 @@
+public class Person {
+    String name;
+    String address;
+    String telephoneNumber;
+    String mobileNumber;
+    String headOfFamily;
+    String uniqueID;
+
+    public Person(String name, String address, String telephoneNumber, String mobileNumber, String headOfFamily, String uniqueID) {
+        this.name = name;
+        this.address = address;
+        this.telephoneNumber = telephoneNumber;
+        this.mobileNumber = mobileNumber;
+        this.headOfFamily = headOfFamily;
+        this.uniqueID = uniqueID;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public String getTelephoneNumber() {
+        return telephoneNumber;
+    }
+
+    public String getMobileNumber() {
+        return mobileNumber;
+    }
+
+    public String getHeadOfFamily() {
+        return headOfFamily;
+    }
+
+    public String getUniqueID() {
+        return uniqueID;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public void setTelephoneNumber(String telephoneNumber) {
+        this.telephoneNumber = telephoneNumber;
+    }
+
+    public void setMobileNumber(String mobileNumber) {
+        this.mobileNumber = mobileNumber;
+    }
+
+    public void setHeadOfFamily(String headOfFamily) {
+        this.headOfFamily = headOfFamily;
+    }
+}
