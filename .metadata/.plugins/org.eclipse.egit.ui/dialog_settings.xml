@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+	<list key="EGit.KnownHosts">
+		<item value="git.eclipse.org"/>
+		<item value="github.com"/>
+		<item value="bitbucket.org"/>
+	</list>
 	<section name="org.eclipse.egit.ui.internal.staging.StagingView">
 		<item key="MAIN_SASH_FORM_ORIENTATION_VERTICAL" value="false"/>
 		<item key="HORIZONTAL_SASH_FORM_WEIGHT" value="500,500"/>
@@ -13,6 +18,16 @@
 			<item value="Commit"/>
 			<item value="JIGNESHGM &lt;jigneshmevada87@gmail.com&gt;"/>
 			<item value="0000000000000000000000000000000000000000"/>
+			<item value="0"/>
+			<item value="false"/>
+			<item value=""/>
+		</list>
+		<list key="C:\Users\jigne\Dropbox\Jignesh Mevada\mca\Java Program\.git">
+			<item value="false"/>
+			<item value="Monikamandani &lt;monikamandani30@gmial.com&gt;"/>
+			<item value="Hello"/>
+			<item value="Monikamandani &lt;monikamandani30@gmial.com&gt;"/>
+			<item value="c9d429fd69f671d80b3acf7416cd5614efdfd10b"/>
 			<item value="0"/>
 			<item value="false"/>
 			<item value=""/>
