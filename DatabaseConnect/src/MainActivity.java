@@ -2,36 +2,26 @@ import java.sql.*;
 
 public class MainActivity {
     public static void main(String[] args) {
-        Connection conn = null;
-        Statement stmt = null;
-        ResultSet rs = null;
+        BankCustomerDAO dao = new BankCustomerDAO();
 
-        try {
-            Class.forName("oracle.jdbc.driver.OracleDriver");
+        // Create table
+        dao.createTable();
 
-            conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "system", "2003");
-            
-            stmt = conn.createStatement();
+        // Insert records
+        BankCustomer customer1 = new BankCustomer(1, "Jignesh Mevada", "jigneshmevada87@gmail.com", Date.valueOf("2003-05-22"));
+        BankCustomer customer2 = new BankCustomer(2, "Chirag Mevada", "chiragmevada2005@gmail.com", Date.valueOf("2005-09-16"));
 
-            rs = stmt.executeQuery("SELECT * FROM student");
+        dao.insertRecord(customer1);
+        dao.insertRecord(customer2);
 
-            while (rs.next()) {
-                System.out.println(rs.getInt("id") + " " + rs.getString("sname") );
-            }
-        } catch (SQLException e) {
-            System.out.println("SQL Error: " + e.getMessage());
-        } catch (ClassNotFoundException e) {
-            System.out.println("Oracle JDBC Driver not found");
-            e.printStackTrace();
-        } finally {
+        // Update record
+        dao.updateRecord(1, "Vivek Solanki", "viveksolanki01@gmail.com");
 
-            try {
-                if (rs != null) rs.close();
-                if (stmt != null) stmt.close();
-                if (conn != null) conn.close();
-            } catch (SQLException e) {
-                System.out.println("Error closing resources: " + e.getMessage());
-            }
-        }
+        // Get record
+        dao.getRecord(1);
+        dao.getRecord(2);
+        
+        // Delete record
+        dao.deleteRecord(2);
     }
 }
