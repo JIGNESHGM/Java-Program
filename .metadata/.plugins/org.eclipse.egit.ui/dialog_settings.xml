@@ -5,6 +5,12 @@
 		<item value="github.com"/>
 		<item value="bitbucket.org"/>
 	</list>
+	<list key="CommitDialog.authorValues">
+		<item value="Monikamandani &lt;monikamandani30@gmial.com&gt;"/>
+	</list>
+	<list key="CommitDialog.committerValues">
+		<item value="Monikamandani &lt;monikamandani30@gmial.com&gt;"/>
+	</list>
 	<section name="org.eclipse.egit.ui.internal.staging.StagingView">
 		<item key="MAIN_SASH_FORM_ORIENTATION_VERTICAL" value="false"/>
 		<item key="HORIZONTAL_SASH_FORM_WEIGHT" value="500,500"/>
@@ -25,9 +31,9 @@
 		<list key="C:\Users\jigne\Dropbox\Jignesh Mevada\mca\Java Program\.git">
 			<item value="false"/>
 			<item value="Monikamandani &lt;monikamandani30@gmial.com&gt;"/>
-			<item value="Database Connectivity"/>
+			<item value="Insert Update Delete"/>
 			<item value="Monikamandani &lt;monikamandani30@gmial.com&gt;"/>
-			<item value="428758b4bd3654ab62d817f3b52d2f5a77f2e918"/>
+			<item value="21251882eca02534c0c50e3d7d2557c9b1eaa322"/>
 			<item value="0"/>
 			<item value="false"/>
 			<item value=""/>
